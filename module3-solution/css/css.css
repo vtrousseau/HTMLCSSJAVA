@@ -1,0 +1,22 @@
+#navlist {
+	background-color: red;
+	margin-top: 0px;
+}
+
+#button {
+	background-color: red;
+}
+
+.menu-item {
+	background-color: #c6c6c6;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.menu-item h2 {
+	font-size: 1.3em;
+}
+
+.return {
+	text-align: right;
+}
