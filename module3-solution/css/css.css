@@ -13,10 +13,26 @@
 	margin-top: 30px;
 }
 
-.menu-item h2 {
+.menu-item h3 {
 	font-size: 1.3em;
 }
 
 .return {
 	text-align: right;
+}
+
+.navbar, .navbar-default {
+  background-color: #EDBB99;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand h1 {
+	margin: 0px;
+	text-transform: uppercase;
 }
