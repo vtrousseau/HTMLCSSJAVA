@@ -1,6 +1,8 @@
 #navlist {
 	background-color: red;
-	margin-top: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 }
 
 #button {
@@ -25,14 +27,25 @@
   background-color: #EDBB99;
   border-radius: 0;
   border: 0;
+  padding-top: 20px;
+  /** padding-bottom: 20px; **/
 }
 
-.navbar-brand {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.navbar-toggle, .collapsed {
+    margin: 20px 0 20px;
+} 
+
+.navbar-collapse {
+	    padding: 0px;
 }
 
 .navbar-brand h1 {
-	margin: 0px;
 	text-transform: uppercase;
+	margin: 0;
+	padding:0;
+}
+
+@media (min-width: 768px) {
+	.navbar, .navbar-default {
+	height: 95px}
 }
