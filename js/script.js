@@ -82,8 +82,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  allCategoriesUrl,
-  buildAndShowHomeHTML,
+  homeHtml,
+  function  buildAndShowHomeHTML (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
   true);
 });
 // *** finish **
@@ -91,7 +94,7 @@ $ajaxUtils.sendGetRequest(
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
-function buildAndShowHomeHTML(categories) {
+function buildAndShowHomeHTML (categories) {
 
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
